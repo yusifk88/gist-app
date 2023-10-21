@@ -1,5 +1,5 @@
 defmodule GistAppWeb.Router do
-  use GistAppWeb, :router
+    use GistAppWeb, :router
 
   import GistAppWeb.UserAuth
 
@@ -68,6 +68,7 @@ defmodule GistAppWeb.Router do
       on_mount: [{GistAppWeb.UserAuth, :ensure_authenticated}] do
       live "/users/settings", UserSettingsLive, :edit
       live "/users/settings/confirm_email/:token", UserSettingsLive, :confirm_email
+      live "/create", CreateGistLive
     end
   end
 

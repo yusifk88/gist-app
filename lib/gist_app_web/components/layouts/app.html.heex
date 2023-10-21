@@ -12,7 +12,7 @@
               <%= if @current_user do %>
               <.link href={~p"/"} class="bg-purple-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</.link>
               <a href="#" class="bg-purple-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Comments</a>
-              <a href="#" class="bg-purple-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">New Gist</a>
+              <.link href={~p"/create"} class="bg-purple-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">New Gist</.link>
 
               <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
 
@@ -151,4 +151,6 @@
     <%= @inner_content %>
   </div>
 </main>
+
+
 </div>
