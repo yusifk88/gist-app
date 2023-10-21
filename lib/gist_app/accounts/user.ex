@@ -9,6 +9,10 @@ defmodule GistApp.Accounts.User do
     field :hashed_password, :string, redact: true
     field :confirmed_at, :naive_datetime
 
+    has_many :gists, GistApp.Gists.Gist
+    has_many :comments, GistApp.Comments.Comment
+    has_many :saved_gists, GistApp.Gists.SavedGist
+
     timestamps()
   end
 
