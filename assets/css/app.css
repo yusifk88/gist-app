@@ -3,3 +3,15 @@
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+
+.drop-down-menu::before{
+
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 90%;
+    border-width:0 5px 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+
+}
