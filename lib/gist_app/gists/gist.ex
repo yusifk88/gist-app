@@ -12,6 +12,7 @@ defmodule GistApp.Gists.Gist do
     has_many :comments, GistApp.Comments.Comment
 
     timestamps()
+
   end
 
   @doc false
